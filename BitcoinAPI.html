@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Wecome to CryptoCompare</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+lmTKXkS+c9d34U9obDdGOZT7zqFicJDkhckYYsW7oenXR37T2OEV4uqfUO45M87" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">CryptoCompare</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About CC<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cryptocurrency</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mining</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Buy and Sell</a>
+          </li>
+        </ul>
+        <!--       <form class="form-inline my-2 my-lg-0"> -->
+        <!--       <input class="form-control mr-sm-2" type="text" placeholder="Search"> -->
+        <!--       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> -->
+      </form>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <div class="transbox">
+      <h1 class="display-3">BitCoin Pricing Analysis</h1>
+    </div>
+    <div class="transbox">
+      <p class="lead">Current events very much affect the price of all cryptocurrencies. Our mission is to help you connect real world events with price fluctuations in the cryptocurrency marketplace, allowing you make connections and draw conclusions that may not be readily apparent. </p>
+    </div>
+    <hr class="my-4">
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p>
+  </div>
+  <div class="bootstrap-iso">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <!-- Date selector -->
+          <form method="post">
+            <div class="input-group date" data-provide="datepicker">
+              <input type="text" class="form-control" id="user-inputed-date">
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+              </div>
+            </div>
+            <div class="form-group"> <!-- Submit button -->
+            <button class="btn btn-primary btn-lg" id="search-button" name="submit" type="submit">Submit</button>
+          </div>
+        </form>
+        <br>
+        <br>
+        <!-- Display search results -->
+        <h1 id="wsjTitle">Wall Street Journal</h1>
+        <div id="WSJData" class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12" id="WSJ-card-section">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card border-light mb-3" style="max-width: 20rem;">
+                  <div class="card-header" id="WSJ-card-header-1"></div>
+                  <div class="card-body">
+                    <h4 class="card-title" id="WSJ-card-title-1"></h4>
+                    <p class="card-text" id="WSJ-card-text-1"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card border-light mb-3" id="second-article-card" style="max-width: 20rem;">
+                  <div class="card-header" id="WSJ-card-header-2"></div>
+                  <div class="card-body">
+                    <h4 class="card-title" id="WSJ-card-title-2"></h4>
+                    <p class="card-text" id="WSJ-card-text-2"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card border-light mb-3" id="second-article-card" style="max-width: 20rem;">
+                  <div class="card-header" id="WSJ-card-header-3"></div>
+                  <div class="card-body">
+                    <h4 class="card-title" id="WSJ-card-title-3"></h4>
+                    <p class="card-text" id="WSJ-card-text-3"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card border-light mb-3" id="fourth-article-card" style="max-width: 20rem;">
+                  <div class="card-header" id="WSJ-card-header-4"></div>
+                  <div class="card-body">
+                    <h4 class="card-title" id="WSJ-card-title-4"></h4>
+                    <p class="card-text" id="WSJ-card-text-4"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="BBCata">
+          <h1 id="BBCTitle">BBC News</h1>
+          <div id="BBCData" class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12" id="BBC-card-section">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card border-light mb-3" style="max-width: 20rem;">
+                    <div class="card-header" id="BBC-card-header-1"></div>
+                    <div class="card-body">
+                      <h4 class="card-title" id="BBC-card-title-1"></h4>
+                      <p class="card-text" id="BBC-card-text-1"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card border-light mb-3" id="second-article-card" style="max-width: 20rem;">
+                    <div class="card-header" id="BBC-card-header-2"></div>
+                    <div class="card-body">
+                      <h4 class="card-title" id="BBC-card-title-2"></h4>
+                      <p class="card-text" id="BBC-card-text-2"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card border-light mb-3" id="second-article-card" style="max-width: 20rem;">
+                    <div class="card-header" id="BBC-card-header-3"></div>
+                    <div class="card-body">
+                      <h4 class="card-title" id="BBC-card-title-3"></h4>
+                      <p class="card-text" id="BBC-card-text-3"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card border-light mb-3" id="fourth-article-card" style="max-width: 20rem;">
+                    <div class="card-header" id="BBC-card-header-4"></div>
+                    <div class="card-body">
+                      <h4 class="card-title" id="BBC-card-title-4"></h4>
+                      <p class="card-text" id="BBC-card-text-4"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--               <p id="sampleMSNBCData"></p> -->
+        </div>
+        
+      </div>
+      <div id="canvasDiv">
+        <canvas id="bitcoinChart" width="400" height="400"></canvas>
+      </div>
+      <div id="currencyData">
+        <h1 id="cryptoTitle"></h1>
+        <p id="sampleCurrencyData"></p>
+      </div>
+      <!-- Right column -->
+      <!--       <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <!-- Display graph -->
+            </div>
+          </a>
+          <br>
+          <br>
+
+            </div>
+          </a>
+        </div>
+      </div> -->
+    </div>
+    <!--         <div class="row"> -->
+    <!--           <div class="col-md-6 col-sm-6 col-xs-12" id="card-section">
+      <div class="panel-body">
+        <div class="card border-light mb-3" id="article-card" style="max-width: 20rem;">
+          <div class="card-header" id="first-card-header"></div>
+          <div class="card-body">
+            <h4 class="card-title" id="first-card-title"></h4>
+            <p class="card-text" id="first-card-text"></p>
+          </div>
+        </div>
+        <div class="card border-light mb-3" id="article-card" style="max-width: 20rem;">
+          <div class="card-header" id="second-card-header"></div>
+          <div class="card-body">
+            <h4 class="card-title" id="second-card-title"></h4>
+            <p class="card-text" id="second-card-text"></p>
+          </div>
+        </div>
+        <div class="card border-light mb-3" id="article-card" style="max-width: 20rem;">
+          <div class="card-header" id="third-card-header"></div>
+          <div class="card-body">
+            <h4 class="card-title" id="third-card-title"></h4>
+            <p class="card-text" id="third-card-text"></p>
+          </div>
+        </div>
+        <div class="card border-light mb-3" id="article-card" style="max-width: 20rem;">
+          <div class="card-header" id="fourth-card-header"></div>
+          <div class="card-body">
+            <h4 class="card-title" id="fourth-card-title"></h4>
+            <p class="card-text" id="fourth-card-text"></p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+</body>
+</html>

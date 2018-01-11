@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Comfortaa|Open+Sans+Condensed:300|Roboto');
+
+
+.transbox {
+  background-color: rgba(156, 151, 148, 0.58);
+}
+
+.glyphicon-th {
+  color: #000000;
+  color-rendering: #000000;
+  padding: auto;
+}
+
+#card-section {
+  float: left;
+}
+
+#sampleCurrencyData {
+  font-size: 20px;
+}
+
+.input-addon,
+.input-group-addon {
+  padding-right: 24px !important;
+  padding-left: 12px !important;
+}
+
+.jumbotron {
+  background-image: url("https://www.canbike.org/public/images/030114/Bitcoin_Logo_Horizontal_Light-4800px.png");
+  background-size:  auto;
+}
+
+#bitcoinChart {
+  position: relative;
+  
+}
+
+.display-3 {
+  font-family: "Bungee Inline", cursive;
+}
+
+.lead {
+  font-family:  "Comfortaa", sans-serif;
+}
+
+#canvasDiv {
+  float: right;
+}
+
+.d-flex w-100 justify-content-between {
+  height:  500px;
+  width: 500px;
+}
